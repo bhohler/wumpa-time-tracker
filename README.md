@@ -1,6 +1,10 @@
 # wumpa-time-tracker
 
-The game doesn't provide you any way to see how much Wumpa Time you have remaining. This tool was made to make it easier to manually keep track of it yourself.
+The game doesn't provide any way to see how much Wumpa Time is remaining. This tool was made to make it easier to manually keep track of it yourself.
+
+[Click here to access the latest version of the app.](https://bhohler.github.io/wumpa-time-tracker/)
+
+The project itself is just a basic Vue.js app. It's using single-file components with TypeScript and Sass.
 
 ## Project setup
 ```
