@@ -38,11 +38,12 @@
 <script lang="ts">
 import Vue from "vue";
 
+const THIRTY_MINUTES: number = 30 * 60;
+
 export default Vue.extend({
-  name: "WumpaTimeCalculator",
-  data: function() {
+  name: "WumpaTimeTracker",
+  data() {
     return {
-      thirtyMinutes: 30 * 60,
       times: [] as string[],
       timeElapsed: "",
       timeRemaining: ""
@@ -66,7 +67,7 @@ export default Vue.extend({
       this.timeElapsed = this.secondsToString(totalSecondsElapsed);
 
       this.timeRemaining = this.secondsToString(
-        this.thirtyMinutes - totalSecondsElapsed
+        THIRTY_MINUTES - totalSecondsElapsed
       );
     },
     getTotalSeconds(time: string): number {

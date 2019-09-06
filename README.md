@@ -1,5 +1,7 @@
 # wumpa-time-tracker
 
+The game doesn't provide you any way to see how much Wumpa Time you have remaining. This tool was made to make it easier to manually keep track of it yourself.
+
 ## Project setup
 ```
 npm install
@@ -12,7 +14,7 @@ npm run serve
 
 ### Compiles and minifies for production
 ```
-npm run build
+npm run build:prod
 ```
 
 ### Lints and fixes files

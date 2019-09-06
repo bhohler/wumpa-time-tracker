@@ -1,17 +1,17 @@
 <template>
   <div id="app">
-    <WumpaTimeCalculator />
+    <WumpaTimeTracker />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
-import WumpaTimeCalculator from "./components/WumpaTimeCalculator.vue";
+import WumpaTimeTracker from "./components/WumpaTimeTracker.vue";
 
 export default Vue.extend({
   name: "app",
   components: {
-    WumpaTimeCalculator
+    WumpaTimeTracker
   }
 });
 </script>
@@ -53,6 +53,14 @@ button {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   border-radius: 0.3rem;
+  margin: 0;
+  font-family: inherit;
+  overflow: visible;
+
+  &::moz-focus-inner {
+    padding: 0;
+    border-style: none;
+  }
 
   &:hover {
     color: #fff;
