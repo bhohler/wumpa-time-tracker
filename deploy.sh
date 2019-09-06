@@ -2,16 +2,21 @@
 
 set -e
 
-npm run build:prod
+rm -rf dist
+mkdir dist
 
 cd dist
 
 git init
-git add -A
-git checkout -b gh-pages
-git commit -m 'Github Pages deploy'
-
 git remote add origin git@github.com:bhohler/wumpa-time-tracker.git
-git push -f -u origin gh-pages
+git fetch --depth 1 origin gh-pages
+git checkout gh-pages
+
+npm run build:prod
+
+git add -A
+
+git commit -m 'GitHub Pages deploy'
+git push -u origin gh-pages
 
 cd -
