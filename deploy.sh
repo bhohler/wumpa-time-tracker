@@ -12,7 +12,15 @@ git remote add origin git@github.com:bhohler/wumpa-time-tracker.git
 git fetch --depth 1 origin gh-pages
 git checkout gh-pages
 
+cd -
+
+mv dist/.git .git-gh-pages
+
 npm run build:prod
+
+mv .git-gh-pages dist/.git
+
+cd dist
 
 git add -A
 
