@@ -2,6 +2,8 @@
 
 set -e
 
+rm -rf .git-gh-pages
+
 rm -rf dist
 mkdir dist
 

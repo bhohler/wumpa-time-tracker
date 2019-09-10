@@ -38,7 +38,6 @@ p {
 button {
   color: #fff;
   background-color: #007bff;
-  border-color: #007bff;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -47,7 +46,6 @@ button {
   font-weight: 400;
   text-align: center;
   white-space: nowrap;
-  vertical-align: middle;
   user-select: none;
   border: 1px solid transparent;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
@@ -57,9 +55,10 @@ button {
   font-family: inherit;
   overflow: visible;
 
-  &::moz-focus-inner {
+  &::moz-focus-inner,
+  &:focus-within {
     padding: 0;
-    border-style: none;
+    border: 0;
   }
 
   &:hover {
