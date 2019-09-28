@@ -23,15 +23,6 @@
         </button>
       </div>
     </form>
-
-    <div class="summary-actions">
-      <div class="button-container">
-        <button type="button" @click="addNewTime()">Add New Time</button>
-        <button type="button" @click="clearAllTimes()">Clear All</button>
-      </div>
-      <p>Total time elapsed: {{ timeElapsed }}</p>
-      <p>Total time remaining: {{ timeRemaining }}</p>
-    </div>
   </div>
 </template>
 
@@ -124,7 +115,7 @@ export default Vue.extend({
 
 <style scoped lang="scss">
 #times {
-  margin-bottom: 1rem;
+  margin: 1rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -134,10 +125,7 @@ export default Vue.extend({
     display: flex;
     align-items: center;
     justify-content: center;
-
-    &:not(:last-of-type) {
-      margin-bottom: 0.5rem;
-    }
+    margin-bottom: 0.5rem;
 
     input {
       margin-right: 0.5rem;
@@ -149,14 +137,15 @@ export default Vue.extend({
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0.5rem;
+  padding: 0.5rem 0 0.75rem 0;
+  position: sticky;
+  background: #1c1c1c;
+  border-bottom: 1px solid #8a8a8a;
+  box-shadow: 0 1.5rem 3rem -3.25rem #fff;
+  top: 0;
 
-  .button-container {
-    margin-bottom: 0.5rem;
-
-    button:not(:last-of-type) {
-      margin-right: 0.5rem;
-    }
+  .button-container button:not(:last-of-type) {
+    margin-right: 0.5rem;
   }
 }
 </style>
