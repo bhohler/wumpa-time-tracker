@@ -15,6 +15,7 @@
           type="text"
           :name="'time_' + index"
           v-model="times[index]"
+          v-mask="'#:##:##'"
           @keyup="calculateTimes()"
           tabindex="1"
         />

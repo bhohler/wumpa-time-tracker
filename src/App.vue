@@ -6,7 +6,10 @@
 
 <script lang="ts">
 import Vue from "vue";
+import { VueMaskDirective } from "v-mask";
 import WumpaTimeTracker from "./components/WumpaTimeTracker.vue";
+
+Vue.directive("mask", VueMaskDirective);
 
 export default Vue.extend({
   name: "app",
