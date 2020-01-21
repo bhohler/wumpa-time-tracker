@@ -78,7 +78,7 @@ button {
   }
 }
 
-input[type="text"] {
+input[type="tel"] {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;

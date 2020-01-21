@@ -12,7 +12,7 @@
     <form id="times">
       <div class="time" v-for="(time, index) in times" :key="index">
         <input
-          type="text"
+          type="tel"
           :name="'time_' + index"
           v-model="times[index]"
           v-mask="'#:##:##'"
